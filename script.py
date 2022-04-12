@@ -1,6 +1,5 @@
 class Script(object):
     START_TXT = """<b>Hello {},
-
 My Name is <a href=https://t.me/{}>{}</a>. A Smart RoBot With Many Amazing Features. I Can Provide Movies & Help You To Manage Your Groups, Just Add Me To Your Group And Enjoy.🥰</b>"""
 
     HELP_TXT = """<b>Hey {}
@@ -59,7 +58,19 @@ Bot Send Json For All Replied Messages Using A Simple Command.
 ◉ /json :- Reply To Any Message To Get Json
 ◉ You Can Use This Command In Pm And Groups."""
 
-    IPADD_TXT = """➢ /ip [text] Address Name"""
+    IPADD_TXT = """Help: <b>IP ADDRESS</b>
+
+- if you want to Find Details of a IP Address Use the Module.
+
+<b><u>𝖢𝗈𝗆𝗆𝖺𝗇𝖽:</u></b>
+
+➢ /ip [Ip Address] 
+➢ /ip 192.180.0.1
+<b>NOTE</b>:
+
+• Nancy should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
 
     COUNTRY_TXT = """Help: <b>COUNTRY</b>
 
