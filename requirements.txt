@@ -28,3 +28,4 @@ PyPDF2
 Heroku3
 countryinfo
 speedtest
+datetime
