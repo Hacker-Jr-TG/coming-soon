@@ -1,11 +1,11 @@
 from pyrogram import filters
 from aiohttp import ClientSession
 from pyrogram import Client as bot
-from plugins.josprojects.function import make_carbon
+from plugins.function import make_carbon
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 aiohttpsession = ClientSession()
 
-C = "**Made by @The_obanai_bot**"
+C = "**Made by @kerala_Rockers**"
 F = InlineKeyboardMarkup(
 [[
      InlineKeyboardButton("Add Link", url="https://t.me/telegram")
