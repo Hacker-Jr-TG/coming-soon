@@ -1121,7 +1121,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
     elif query.data == 'tips':
-        await query.answer("=> {search} Ask with correct  are not released in OTTheatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
+        await query.answer("=> {title} Ask {runtime} with correct  are not released in OTTheatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
     try: await query.answer('➪ 𝙉𝘼𝙉𝘾𝙔 🎀 낸시')
     except: pass
 
