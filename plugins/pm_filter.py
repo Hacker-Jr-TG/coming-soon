@@ -91,7 +91,7 @@ async def next_page(bot, query):
 
     btn.insert(0,
         [
-            InlineKeyboardButton(f"🔮 {search}", "dupe"),
+            InlineKeyboardButton(f"🔮 {search}", "tips"),
             InlineKeyboardButton(f"🗂️ Files: {len(files)}", "dupe")
         ]
     )
@@ -1120,11 +1120,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('➪ 𝙉𝘼𝙉𝘾𝙔 🎀 낸시')
-
+    elif query.data == 'tips':
+        await query.answer("=> {search} Ask with correct  are not released in OTTheatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
+    try: await query.answer('➪ 𝙉𝘼𝙉𝘾𝙔 🎀 낸시')
+    except: pass
 
 async def auto_filter(client, msg, spoll=False):
-    if not spoll:
+    if not spo
         message = msg
         settings = await get_settings(message.chat.id)
         if message.text.startswith("/"): return  # ignore commands
@@ -1185,7 +1187,7 @@ async def auto_filter(client, msg, spoll=False):
         )
 
     btn.insert(0, [
-        InlineKeyboardButton(f"🔮 {search}", "dupe"),
+        InlineKeyboardButton(f"🔮 {search}", "tips"),
         InlineKeyboardButton(f"🗂️ Files: {total_results}", "dupe")
     ])
     reply_id = message.reply_to_message.message_id if message.reply_to_message else message.message_id
