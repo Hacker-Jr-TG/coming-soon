@@ -30,3 +30,5 @@ Heroku3
 countryinfo
 speedtest
 datetime
+shazamio
+ffmpeg==1.4
