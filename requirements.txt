@@ -31,6 +31,5 @@ countryinfo
 speedtest
 datetime
 shazamio
-ffmpeg==1.4
-tswift
-py-tgcalls==0.8.2
+
+
