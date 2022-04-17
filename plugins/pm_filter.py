@@ -32,19 +32,6 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
 
-now = datetime.datetime.now()
-tz = pytz.timezone('asia/kolkata')
-your_now = now.astimezone(tz)
-hour = your_now.hour
-if 0 <= hour <12:
-    lallus = "Gᴏᴏᴅ ᴍᴏʀɴɪɴɢ"
-elif 12 <= hour <15:
-    lallus = 'Gᴏᴏᴅ ᴀꜰᴛᴇʀɴᴏᴏɴ'
-elif 15 <= hour <20:
-    lallus = 'Gᴏᴏᴅ ᴇᴠᴇɴɪɴɢ'
-else:
-    lallus = 'Gᴏᴏᴅ ɴɪɢʜᴛ'
-
 @Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message): 
       mode_on = ["yes", "on", "true"]
