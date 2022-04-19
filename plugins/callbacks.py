@@ -34,8 +34,8 @@ async def callback(bot, msg: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(KGF_BUTTON)
         )
 
-    elif msg.data == "smovies":
-        await msg.answer("Tᴏ Dᴏᴡɴʟᴏᴀᴅ Kɢғ 𝟸 Sᴇɴᴅ Tʜɪs Tᴇxᴛ kgf 2", show_alert=True)
+    elif msg.data == "close":
+        await msg.answer("Closed")
+        await msg.message.delete()
 
-    elif msg.data == "scommands":
-        await msg.answer("/start - Tᴏ Sᴛᴀʀᴛ Tʜɪs Bᴏᴛ\n/id - Tᴏ Gᴇᴛ Iᴅ ( ᵒⁿˡʸ ʷᵒʳᵏˢ ⁱⁿ ᵍʳᵒᵘᵖ )", show_alert=True)
+    
