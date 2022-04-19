@@ -10,23 +10,7 @@ import random
 
 @Client.on_callback_query()
 async def callback(bot, msg: CallbackQuery):
-    if msg.data == "next":
-        await msg.message.edit("○○○○○")
-        await asyncio.sleep(0.2)
-        await msg.message.edit("●○○○○")
-        await asyncio.sleep(0.2)
-        await msg.message.edit("●●○○○")
-        await asyncio.sleep(0.2)
-        await msg.message.edit("●●●○○")
-        await asyncio.sleep(0.2)
-        await msg.message.edit("●●●●○")
-        await asyncio.sleep(0.2)
-        await msg.message.edit("●●●●●")
-        await asyncio.sleep(0.2)
-        await msg.message.edit(
-            text="Hᴇʀᴇ Is Yᴏᴜ'ʀᴇ Mᴇɴᴜ",
-            reply_markup=InlineKeyboardMarkup()
-        )
+
     elif msg.data == "downlod":
         await msg.message.edit(
             text="""<b>• Nᴀᴍᴇ : KGF
@@ -40,10 +24,3 @@ async def callback(bot, msg: CallbackQuery):
 
     elif msg.data == "scommands":
         await msg.answer("/start - Tᴏ Sᴛᴀʀᴛ Tʜɪs Bᴏᴛ\n/id - Tᴏ Gᴇᴛ Iᴅ ( ᵒⁿˡʸ ʷᵒʳᵏˢ ⁱⁿ ᵍʳᵒᵘᵖ )", show_alert=True)
-
-    elif msg.data == "sback":
-        await msg.message.delete()
-        await msg.message.reply_sticker(
-            sticker="CAACAgIAAxkBAAECR5liWidHhuUuJNcoJ_5QjliWb4I4kgAC1BEAA8CgSXknAeKPK_QMHgQ",
-            reply_markup=InlineKeyboardMarkup(S_BACK_BUTTO)
-        )
