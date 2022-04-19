@@ -1,7 +1,7 @@
 from pyrogram.types import CallbackQuery
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram import Client
-from pyrogrambot.buttons import KGF_BUTTON
+from plugins.buttons import KGF_BUTTON
 import asyncio
 import random
 
