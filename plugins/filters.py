@@ -273,7 +273,7 @@ async def delallconfirm(client, message):
             quote=True
         )
 
-@Client.on_message(filters.regex("kgf 2") & filters.private)
+@Client.on_message(filters.regex('kgf', 'kgf 2') & filters.private)
 async def kgf_filter(bot, message):
     await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
