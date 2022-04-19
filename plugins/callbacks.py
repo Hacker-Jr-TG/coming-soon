@@ -3,7 +3,6 @@ from pyrogram.types import InlineKeyboardMarkup
 from pyrogram import Client
 from plugins.buttons import KGF_BUTTON
 import asyncio
-from plugins.photos import PHOTOS
 import random
 
 
