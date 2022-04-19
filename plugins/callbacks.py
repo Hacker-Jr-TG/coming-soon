@@ -6,7 +6,6 @@ import asyncio
 import random
 
 
-
 @Client.on_callback_query()
 async def callback(bot, msg: CallbackQuery):
     elif msg.data == "downlod":
