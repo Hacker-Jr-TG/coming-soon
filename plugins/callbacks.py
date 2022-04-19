@@ -25,7 +25,7 @@ async def callback(bot, msg: CallbackQuery):
         await asyncio.sleep(0.2)
         await msg.message.edit(
             text="Hᴇʀᴇ Is Yᴏᴜ'ʀᴇ Mᴇɴᴜ",
-            reply_markup=InlineKeyboardMarkup(MENU_BUTTON)
+            reply_markup=InlineKeyboardMarkup()
         )
     elif msg.data == "downlod":
         await msg.message.edit(
