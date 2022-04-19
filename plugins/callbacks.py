@@ -1,10 +1,9 @@
 from pyrogram.types import CallbackQuery
 from pyrogram.types import InlineKeyboardMarkup
 from pyrogram import Client
-from pyrogrambot.buttons import MENU_BUTTON, MOVIE_BUTTON, COMMM_BUTTON, KGF_BUTTON, S_BACK_BUTTO, SMENU_BUTTO, PMENU_BUTTN, button, VDENU_BUTTO
+from plugins.buttons import KGF_BUTTON
 import asyncio
-import pytz, datetime
-from pyrogrambot.photos import PHOTOS
+from plugins.photos import PHOTOS
 import random
 
 
