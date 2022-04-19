@@ -10,6 +10,23 @@ import random
 
 @Client.on_callback_query()
 async def callback(bot, msg: CallbackQuery):
+    if msg.data == "next":
+        await msg.message.edit("○○○○○")
+        await asyncio.sleep(0.2)
+        await msg.message.edit("●○○○○")
+        await asyncio.sleep(0.2)
+        await msg.message.edit("●●○○○")
+        await asyncio.sleep(0.2)
+        await msg.message.edit("●●●○○")
+        await asyncio.sleep(0.2)
+        await msg.message.edit("●●●●○")
+        await asyncio.sleep(0.2)
+        await msg.message.edit("●●●●●")
+        await asyncio.sleep(0.2)
+        await msg.message.edit(
+            text="Hᴇʀᴇ Is Yᴏᴜ'ʀᴇ Mᴇɴᴜ",
+            reply_markup=InlineKeyboardMarkup(MENU_BUTTON)
+        )
     elif msg.data == "downlod":
         await msg.message.edit(
             text="""<b>• Nᴀᴍᴇ : KGF
