@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardButton
 
 KGF_D_BUTTON = [[
                InlineKeyboardButton("𝗖𝗛𝗔𝗣𝗧𝗘𝗥 𝟏", callback_data="downlod"),
-               InlineKeyboardButton("𝗖𝗛𝗔𝗣𝗧𝗘𝗥 𝟐", callback_data="code")
+               InlineKeyboardButton("𝗖𝗛𝗔𝗣𝗧𝗘𝗥 𝟐", callback_data="smovies")
                ]]
 
 KGF_BUTTON = [[
