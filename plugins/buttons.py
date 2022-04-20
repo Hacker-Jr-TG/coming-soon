@@ -5,11 +5,11 @@ KGF_D_BUTTON = [[
                ]]
 
 KGF_BUTTON = [[
-             InlineKeyboardButton("200MB", url="https://t.me/AIOM_PYRO/7"),
-             InlineKeyboardButton("400MB", url="https://t.me/AIOM_PYRO/7"),
-             InlineKeyboardButton("700MB", url="https://t.me/AIOM_PYRO/7")
+             InlineKeyboardButton("മലയാളം", url="https://t.me/AIOM_PYRO/7"),
+             InlineKeyboardButton("TAMIL", url="https://t.me/AIOM_PYRO/7"),
+             InlineKeyboardButton("HINDI", url="https://t.me/AIOM_PYRO/7")
              ],[
-             InlineKeyboardButton("1.2GB", url="https://t.me/AIOM_PYRO/7"),
-             InlineKeyboardButton("1.7GB", url="https://t.me/AIOM_PYRO/7"),
+             InlineKeyboardButton("TELUGU", url="https://t.me/AIOM_PYRO/7"),
+             InlineKeyboardButton("KANNADA", url="https://t.me/AIOM_PYRO/7"),
              InlineKeyboardButton("Cʟᴏꜱᴇ", callback_data="close")
              ]]
