@@ -1,5 +1,6 @@
 import io
 import random
+import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from plugins.photos import KGF_PHOTOS
@@ -275,8 +276,10 @@ async def delallconfirm(client, message):
 
 @Client.on_message(filters.regex('Kgf') & filters.incoming)
 async def Kgf_filter(client, message):
-    await message.reply_photo(
+    hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON)
-        await asyncio.sleep(10)
+    await asyncio.sleep(10)
+    await hegg.delete()
+    await message.delete()
     )
