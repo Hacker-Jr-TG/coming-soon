@@ -630,13 +630,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "downlod":    
         await query.message.edit(
-            text="""<b>• Nᴀᴍᴇ : KGF
-• Yᴇᴀʀ : 2022
-• Sɪᴢᴇ : - 1400MB</b>""",
+            text="""<b>🧿 Title : K.G.F: Chapter 2
+⭐️ Ratings : 9.6 / 10.0
+🎭 Genre : Action, Crime, Drama, Thriller
+📆 Release : 13 Apr 2022 
+🎙 Language : Kannada, Hindi, Tamil, Malayalam, Telugu
+
+✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
             reply_markup=InlineKeyboardMarkup(KGF_BUTTON)
         )
     elif query.data == "smovies":
-        await query.answer("Tᴏ Dᴏᴡɴʟᴏᴀᴅ Kɢғ 𝟸 Sᴇɴᴅ Tʜɪs Tᴇxᴛ kgf 2", show_alert=True)
+        await query.answer("Coming Soon 🔜", show_alert=True)
     elif query.data == "code":
         await query.answer("നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ Source Code ചോയ്ച്ച് വന്നിരിക്കുന്നു. നോക്കി ഇരുന്നോ, ഇപ്പൊ കിട്ടും. 😂 മാമനൊടു ഒന്നും തോന്നല്ലേ മക്കളേ. 😊",show_alert=True)
     elif query.data == "torrent":
