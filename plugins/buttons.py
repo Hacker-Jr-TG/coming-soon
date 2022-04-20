@@ -5,11 +5,11 @@ KGF_D_BUTTON = [[
                ]]
 
 KGF_BUTTON = [[
-             InlineKeyboardButton("മലയാളം", url="https://t.me/AIOM_PYRO/7"),
-             InlineKeyboardButton("TAMIL", url="https://t.me/AIOM_PYRO/7"),
-             InlineKeyboardButton("HINDI", url="https://t.me/AIOM_PYRO/7")
+             InlineKeyboardButton("മലയാളം", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADOAYAAnHRAVflSU0XBg9YoRYE"),
+             InlineKeyboardButton("TAMIL", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADOQYAAnHRAVeazV9wvpi4SRYE"),
+             InlineKeyboardButton("HINDI", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADPQYAAnHRAVergKA1x56J1hYE")
              ],[
-             InlineKeyboardButton("TELUGU", url="https://t.me/AIOM_PYRO/7"),
-             InlineKeyboardButton("KANNADA", url="https://t.me/AIOM_PYRO/7"),
+             InlineKeyboardButton("TELUGU", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADOwYAAnHRAVc8R-uNd43pLBYE"),
+             InlineKeyboardButton("KANNADA", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADPAYAAnHRAVd6dci1UtsI9BYE"),
              InlineKeyboardButton("Cʟᴏꜱᴇ", callback_data="close")
              ]]
