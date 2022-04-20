@@ -629,12 +629,14 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "downlod":    
-        await query.message.edit(
+        gg = await query.message.edit(
             text="""<b>• Nᴀᴍᴇ : KGF
 • Yᴇᴀʀ : 2022
 • Sɪᴢᴇ : - 1400MB</b>""",
             reply_markup=InlineKeyboardMarkup(KGF_BUTTON)
-        await asyncio.sleep(0.2)
+        await asyncio.sleep(10)
+        await gg.delete()
+        await message.delete()
         )
     elif query.data == "smovies":
         await query.answer("Tᴏ Dᴏᴡɴʟᴏᴀᴅ Kɢғ 𝟸 Sᴇɴᴅ Tʜɪs Tᴇxᴛ kgf 2", show_alert=True)
