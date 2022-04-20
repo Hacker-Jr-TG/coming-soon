@@ -629,6 +629,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode='html'
         )
     elif query.data == "downlod":
+            text="""<b>• Nᴀᴍᴇ : KGF
+• Yᴇᴀʀ : 2022
+• Sɪᴢᴇ : - 1400MB</b>""",
          await query.message.edit(
             text="""<b>• Nᴀᴍᴇ : KGF
 • Yᴇᴀʀ : 2022
