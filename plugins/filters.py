@@ -278,4 +278,5 @@ async def Kgf_filter(client, message):
     await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON)
+        await asyncio.sleep(10)
     )
