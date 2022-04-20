@@ -278,8 +278,8 @@ async def delallconfirm(client, message):
 async def Kgf_filter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
-        reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON)
+        reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
     await asyncio.sleep(10)
     await hegg.delete()
     await message.delete()
-    )
+    
