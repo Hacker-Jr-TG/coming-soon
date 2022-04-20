@@ -14,6 +14,7 @@ from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GRO
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.handlers import CallbackQueryHandler
 from pyrogram import Client, filters
+from plugins.buttons import KGF_BUTTON
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from database.users_chats_db import db
@@ -627,6 +628,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif msg.data == "downlod":
+        msg1 = await msg.message.edit(
+            text="""<b>• Nᴀᴍᴇ : KGF
+• Yᴇᴀʀ : 2022
+• Sɪᴢᴇ : - 1400MB</b>""",
+            reply_markup=InlineKeyboardMarkup(KGF_BUTTON)
+        )
+        await query.answer('➪ 𝙉𝘼𝙉𝘾𝙔 🎀 낸시')
+        await asyncio.sleep(300)
+        await msg1.delete()
     elif query.data == "code":
         await query.answer("നീ ഏതാ..... ഒന്ന് പോടെയ് അവൻ Source Code ചോയ്ച്ച് വന്നിരിക്കുന്നു. നോക്കി ഇരുന്നോ, ഇപ്പൊ കിട്ടും. 😂 മാമനൊടു ഒന്നും തോന്നല്ലേ മക്കളേ. 😊",show_alert=True)
     elif query.data == "torrent":
