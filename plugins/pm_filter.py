@@ -628,15 +628,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "downlod":
+    elif query.data == "downlod":    
          await query.message.edit(
             text="""<b>• Nᴀᴍᴇ : KGF
 • Yᴇᴀʀ : 2022
 • Sɪᴢᴇ : - 1400MB</b>""",
-         await query.message.edit(
-            text="""<b>• Nᴀᴍᴇ : KGF
-• Yᴇᴀʀ : 2022
-• Sɪᴢᴇ : - 1400MB</b>""",
+            sticker="CAACAgUAAxkBAAEGbWxiYEzBCtrAKrx5D6SZ-scWQO_KaQACjgYAApVYAAFX5eGCkcOpzgABHgQ",
             reply_markup=InlineKeyboardMarkup(KGF_BUTTON)
         )
     elif query.data == "smovies":
