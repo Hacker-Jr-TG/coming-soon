@@ -6,6 +6,8 @@ KGF_D_BUTTON = [[
                ]]
 
 KGF_BUTTON = [[
+             InlineKeyboardButton("♻️ KGF : CHAPTER 1 ♻️", "dupe")            
+             ],[
              InlineKeyboardButton("മലയാളം", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADOAYAAnHRAVflSU0XBg9YoRYE"),
              InlineKeyboardButton("TAMIL", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADOQYAAnHRAVeazV9wvpi4SRYE")            
              ],[
