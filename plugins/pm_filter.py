@@ -630,7 +630,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "downlod":    
         await query.message.edit(
-            text="""<b>🧿 Title : K.G.F: Chapter 2
+            text="""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
 🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
 ⭐ Ratings : 9.6 / 10.0
@@ -641,7 +641,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "kgfdownlod":    
         await query.message.edit(
-            text="""<b>🧿 Title : K.G.F: Chapter 2
+            text="""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
 🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
 ⭐ Ratings : 9.6 / 10.0
