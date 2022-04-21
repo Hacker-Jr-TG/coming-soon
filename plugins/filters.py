@@ -278,7 +278,7 @@ async def delallconfirm(client, message):
 async def Kgf_filter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
-        caption=f"""<b>🧿 Title : K.G.F: Chapter 2
+        caption=f"""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
 🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
 ⭐ Ratings : 9.6 / 10.0
@@ -294,7 +294,7 @@ async def Kgf_filter(client, message):
 async def kgf_filter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
-        caption=f"""<b>🧿 Title : K.G.F: Chapter 2
+        caption=f"""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
 🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
 ⭐ Ratings : 9.6 / 10.0
@@ -310,7 +310,7 @@ async def kgf_filter(client, message):
 async def KGF_filter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
-        caption=f"""<b>🧿 Title : K.G.F: Chapter 2
+        caption=f"""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
 🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
 ⭐ Ratings : 9.6 / 10.0
