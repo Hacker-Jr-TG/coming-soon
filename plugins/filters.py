@@ -275,7 +275,7 @@ async def delallconfirm(client, message):
         )
 
 @Client.on_message(filters.regex(['Kgf', 'kgf']) & filters.incoming)
-async def (client, message):
+async def Kgffilter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
         caption=f"""<b>🧿 Title : K.G.F: Chapter 2
