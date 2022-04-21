@@ -13,6 +13,6 @@ KGF_BUTTON = [[
              InlineKeyboardButton("TELUGU", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADOwYAAnHRAVc8R-uNd43pLBYE"),
              InlineKeyboardButton("KANNADA", url="https://t.me/Oru_adaar_Robot?start=BATCH-BQADBQADPAYAAnHRAVd6dci1UtsI9BYE")
              ],[
-             InlineKeyboardButton("⏪ Bᴀᴄᴋ", callback_data="KGF_D_BUTTON")
+             InlineKeyboardButton("⏪ Bᴀᴄᴋ", callback_data="KGF_D_BUTTON"),
              InlineKeyboardButton("🔐 Cʟᴏꜱᴇ", callback_data="close_data")
              ]]
