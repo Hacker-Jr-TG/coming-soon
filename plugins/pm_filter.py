@@ -628,7 +628,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
-    elif query.data == "downlod":    
+    elif query.data == "downlod":
+        await query.message.delete()    
         await query.message.edit(
             text="""<b>🧿 Title : K.G.F: Chapter 2
 📆 Release : 13 Apr 2022
