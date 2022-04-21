@@ -274,19 +274,19 @@ async def delallconfirm(client, message):
             quote=True
         )
 
-@Client.on_message(filters.regex('Kgf') & filters.incoming)
+@Client.on_message(filters.regex('Kgf', 'kgf') & filters.incoming)
 async def Kgf_filter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
         caption=f"""<b>🧿 Title : K.G.F: Chapter 2
-⭐️ Ratings : 9.6 / 10.0
-🎭 Genre : Action, Crime, Drama, Thriller
-📆 Release : 13 Apr 2022 
-🎙 Language : Kannada, Hindi, Tamil, Malayalam, Telugu
+📆 Release : 13 Apr 2022
+🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
+⭐ Ratings : 9.6 / 10.0
+🎭 Genres : Action, Crime, Drama, Thriller
 
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
-    await asyncio.sleep(900)
+    await asyncio.sleep(700)
     await hegg.delete()
     await message.delete()
     
