@@ -19,6 +19,18 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
+    m = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+    time = m.hour
+
+    if time < 12:
+        get="Gᴏᴏᴅ Mᴏʀɴɪɴɢ"
+    elif time < 15:
+        get="Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ"
+    elif time < 20:
+        get="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
+    else:
+        get="Gᴏᴏᴅ Nɪɢʜᴛ"
+
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
@@ -40,17 +52,6 @@ async def start(client, message):
             await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
             await db.add_chat(message.chat.id, message.chat.title)
         return 
-    m = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-    time = m.hour
-
-    if time < 12:
-        get="Gᴏᴏᴅ Mᴏʀɴɪɴɢ"
-    elif time < 15:
-        get="Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ"
-    elif time < 20:
-        get="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
-    else:
-        get="Gᴏᴏᴅ Nɪɢʜᴛ"
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id, message.from_user.first_name)
         await client.send_message(LOG_CHANNEL, Script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
