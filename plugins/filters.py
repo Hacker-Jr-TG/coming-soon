@@ -286,7 +286,7 @@ async def Kgf_filter(client, message):
 
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
-    await asyncio.sleep(700)
+    await asyncio.sleep(10)
     await hegg.delete()
     await message.delete()
 
@@ -302,7 +302,7 @@ async def kgf_filter(client, message):
 
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
-    await asyncio.sleep(700)
+    await asyncio.sleep(10)
     await hvgg.delete()
     await message.delete()
 
@@ -318,7 +318,7 @@ async def KGF_filter(client, message):
 
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
-    await asyncio.sleep(700)
+    await asyncio.sleep(10)
     await hebg.delete()
     await message.delete()
     
