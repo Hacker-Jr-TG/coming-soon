@@ -292,7 +292,7 @@ async def Kgf_filter(client, message):
 
 @Client.on_message(filters.regex('kgf') & filters.incoming)
 async def kgf_filter(client, message):
-    hegg = await message.reply_photo(
+    hvgg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
         caption=f"""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
@@ -303,12 +303,12 @@ async def kgf_filter(client, message):
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
     await asyncio.sleep(700)
-    await hegg.delete()
+    await hvgg.delete()
     await message.delete()
 
 @Client.on_message(filters.regex('KGF') & filters.incoming)
 async def KGF_filter(client, message):
-    hegg = await message.reply_photo(
+    hebg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
         caption=f"""<b>🧿 Title : K.G.F: Chapter 1 & 2
 📆 Release : 13 Apr 2022
@@ -319,6 +319,6 @@ async def KGF_filter(client, message):
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
     await asyncio.sleep(700)
-    await hegg.delete()
+    await hebg.delete()
     await message.delete()
     
