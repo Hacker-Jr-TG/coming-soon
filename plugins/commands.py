@@ -116,7 +116,7 @@ async def start(client, message):
         file_id = data
         pre = ""
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply_sticker("CAACAgUAAxkBAAEGe09iYrOhyjcPQG-TWnRduVInY_C1EQACBQYAAhuxGVfxk6KwF_9rOR4E")
+        sts = await message.reply_("Please Wait....")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -164,7 +164,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply_sticker("CAACAgUAAxkBAAEGe09iYrOhyjcPQG-TWnRduVInY_C1EQACBQYAAhuxGVfxk6KwF_9rOR4E")
+        sts = await message.reply("Please Wait....")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
