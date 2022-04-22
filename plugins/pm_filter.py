@@ -33,6 +33,18 @@ BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
 
+    m = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
+    time = m.hour
+
+    if time < 12:
+        get="Gᴏᴏᴅ Mᴏʀɴɪɴɢ"
+    elif time < 15:
+        get="Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ"
+    elif time < 20:
+        get="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
+    else:
+        get="Gᴏᴏᴅ Nɪɢʜᴛ"
+
 @Client.on_message(filters.command('autofilter'))
 async def fil_mod(client, message): 
       mode_on = ["yes", "on", "true"]
