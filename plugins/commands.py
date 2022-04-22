@@ -19,18 +19,6 @@ logger = logging.getLogger(__name__)
 
 BATCH_FILES = {}
 
-    m = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
-    time = m.hour
-
-    if time < 12:
-        get="Gᴏᴏᴅ Mᴏʀɴɪɴɢ"
-    elif time < 15:
-        get="Gᴏᴏᴅ Aғᴛᴇʀɴᴏᴏɴ"
-    elif time < 20:
-        get="Gᴏᴏᴅ Eᴠᴇɴɪɴɢ"
-    else:
-        get="Gᴏᴏᴅ Nɪɢʜᴛ"
-
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
 async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
