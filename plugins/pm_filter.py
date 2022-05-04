@@ -14,7 +14,6 @@ from info import ADMINS, AUTH_CHANNEL, AUTH_USERS, CUSTOM_FILE_CAPTION, AUTH_GRO
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.handlers import CallbackQueryHandler
 from pyrogram import Client, filters
-from plugins.buttons import KGF_BUTTON, KGF_D_BUTTON
 from pyrogram.errors import FloodWait, UserIsBlocked, MessageNotModified, PeerIdInvalid
 from utils import get_size, is_subscribed, get_poster, search_gagala, temp, get_settings, save_group_settings
 from database.users_chats_db import db
@@ -627,28 +626,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-    elif query.data == "downlod":    
-        await query.message.edit(
-            text="""<b>🧿 Title : K.G.F: Chapter 1 & 2
-📆 Release : 13 Apr 2022
-🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
-⭐ Ratings : 9.6 / 10.0
-🎭 Genres : Action, Crime, Drama, Thriller
-
-✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
-            reply_markup=InlineKeyboardMarkup(KGF_BUTTON)
-        )
-    elif query.data == "kgfdownlod":    
-        await query.message.edit(
-            text="""<b>🧿 Title : K.G.F: Chapter 1 & 2
-📆 Release : 13 Apr 2022
-🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
-⭐ Ratings : 9.6 / 10.0
-🎭 Genres : Action, Crime, Drama, Thriller
-
-✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
-            reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON)
         )
     elif query.data == "smovies":
         await query.answer("Coming Soon 🔜", show_alert=True)
