@@ -3,8 +3,8 @@ import random
 import asyncio
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from plugins.photos import KGF_PHOTOS
-from plugins.buttons import KGF_D_BUTTON
+from plugins.photos import CBI_PHOTOS
+from plugins.buttons import CBI_BUTTON
 from database.filters_mdb import(
    add_filter,
    get_filters,
@@ -274,19 +274,19 @@ async def delallconfirm(client, message):
             quote=True
         )
 
-@Client.on_message(filters.regex('Kgf') & filters.incoming)
-async def Kgf_filter(client, message):
+@Client.on_message(filters.regex('CBI') & filters.group)
+async def CBI_filter(client, message):
     hegg = await message.reply_photo(
         photo=random.choice(KGF_PHOTOS),
-        caption=f"""<b>🧿 Title : K.G.F: Chapter 1 & 2
-📆 Release : 13 Apr 2022
-🎙 Languages : Kannada, Hindi, Tamil, Malayalam, Telugu
-⭐ Ratings : 9.6 / 10.0
-🎭 Genres : Action, Crime, Drama, Thriller
+        caption=f"""<b>📺 TɪᴛLᴇ : CBI Movies Collection 
+📆 YᴇAʀ : (1988 - 2022)
+🎙 LᴀNɢUᴀGᴇ : Malayalam
+⭐ RᴀTɪNɢ : 6.8 / 10.0
+🎭 GᴇNʀEs : Crime,  Mystery,  Thriller
 
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
         reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
-    await asyncio.sleep(700)
+    await asyncio.sleep(800)
     await hegg.delete()
     await message.delete()
 
