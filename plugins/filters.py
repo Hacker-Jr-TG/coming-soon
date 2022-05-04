@@ -277,7 +277,7 @@ async def delallconfirm(client, message):
 @Client.on_message(filters.regex('CBI') & filters.group)
 async def CBI_filter(client, message):
     hegg = await message.reply_photo(
-        photo=random.choice(KGF_PHOTOS),
+        photo=random.choice(CBI_PHOTOS),
         caption=f"""<b>📺 TɪᴛLᴇ : CBI Movies Collection 
 📆 YᴇAʀ : (1988 - 2022)
 🎙 LᴀNɢUᴀGᴇ : Malayalam
@@ -285,7 +285,7 @@ async def CBI_filter(client, message):
 🎭 GᴇNʀEs : Crime,  Mystery,  Thriller
 
 ✍️ Note: This message will be Auto-deleted after 10 hours to avoid copyright issues.</b>""",
-        reply_markup=InlineKeyboardMarkup(KGF_D_BUTTON))
+        reply_markup=InlineKeyboardMarkup(CBI_BUTTON))
     await asyncio.sleep(800)
     await hegg.delete()
     await message.delete()
